@@ -1683,13 +1683,13 @@ static struct spi_nor_info fmc_spi_nor_info_table[] = {
 			&read_fast(1, INFINITE, 133), /* 133MHz */
 			&read_dual(1, INFINITE, 133), /* 133MHz */
 			&read_dual_addr(1, INFINITE, 133), /* 133MHz */
-			//&read_quad(1, INFINITE, 133), /* 133MHz */
-			//&read_quad_addr(3, INFINITE, 133), /* 133MHz */
+			&read_quad(1, INFINITE, 133), /* 133MHz */
+			&read_quad_addr(3, INFINITE, 133), /* 133MHz */
 			0
 		},
 		{
 			&write_std(0, 256, 133), /* 133MHz */
-			//&write_quad(0, 256, 133),  /* 133MHz */
+			&write_quad(0, 256, 133),  /* 133MHz */
 			0
 		},
 		{
